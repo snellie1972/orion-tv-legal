@@ -94,7 +94,7 @@
 
 <div class="note">
   <strong>Kort samengevat:</strong> Orion TV is alleen een mediaspeler. Je hebt geen account bij ons nodig.
-  De afspeellijsten en inloggegevens die je invult, worden <strong>alleen op je eigen apparaat</strong> opgeslagen.
+  De afspeellijsten en inloggegevens die je invult, worden <strong>alleen op je eigen apparaat</strong> opgeslagen (of, als je dat zelf kiest, op je eigen netwerkmap).
   Wij ontvangen ze niet en wij verkopen geen gegevens. De App maakt rechtstreeks verbinding met de server
   van de aanbieder die jij zelf hebt ingevuld.
 </div>
@@ -138,13 +138,18 @@
   <tbody>
     <tr>
       <td>Gegevens van je bron</td>
-      <td>Server-URL, gebruikersnaam en wachtwoord van je Xtream Codes-account; URL of bestand van je M3U-lijst; EPG-URL</td>
+      <td>Server-URL, gebruikersnaam en wachtwoord van je Xtream Codes-account; URL van je M3U-lijst; EPG-URL</td>
       <td>Alleen op je apparaat</td>
     </tr>
     <tr>
       <td>Instellingen en voorkeuren</td>
       <td>Taal, spelerinstellingen, favorieten, kijkgeschiedenis, ouderlijk-toezicht-pincode</td>
       <td>Alleen op je apparaat</td>
+    </tr>
+    <tr>
+      <td>Opnames en back-ups</td>
+      <td>Uitzendingen die je zelf plant om op te nemen; back-ups van je catalogus en instellingen; het adres, de gebruikersnaam en het wachtwoord van je eigen netwerkmap (SMB)</td>
+      <td>Op je apparaat of op je eigen netwerkmap</td>
     </tr>
     <tr>
       <td>Technische gegevens bij streamen</td>
@@ -179,6 +184,11 @@
   van je apparaat, in de beschermde opslag van de App. Wij hebben geen server waar deze gegevens naartoe gaan,
   en wij kunnen ze niet inzien.
 </p>
+<p>
+  Kies je ervoor om opnames of back-ups op een netwerkmap op te slaan (bijvoorbeeld een NAS of computer in je eigen
+  netwerk), dan stuurt de App die bestanden rechtstreeks naar die netwerkmap. Het wachtwoord van die netwerkmap wordt
+  versleuteld op je apparaat bewaard. Wij ontvangen deze bestanden en gegevens niet.
+</p>
 
 <h2 id="delen">5. Delen met derden</h2>
 <p>Wij verkopen of verhuren geen persoonsgegevens. Wel heb je met de volgende partijen te maken:</p>
@@ -200,11 +210,20 @@
 
 <h2 id="machtigingen">6. Machtigingen van de App</h2>
 <ul>
-  <li><strong>Internet / netwerkstatus</strong>: om afspeellijsten, streams en de programmagids te laden.</li>
-  <li><strong>Opslag of bestanden kiezen</strong> (alleen als je dat zelf doet): om een M3U-bestand van je apparaat te openen.</li>
-  <li><strong>Scherm aan houden</strong>: zodat het scherm niet uitgaat tijdens het kijken.</li>
+  <li><strong>Internet, netwerkstatus en wifi-status</strong>: om afspeellijsten, streams en de programmagids te laden,
+      en om je eigen netwerkmap te bereiken voor opnames en back-ups.</li>
+  <li><strong>Meldingen</strong>: om te laten zien dat de catalogus wordt bijgewerkt of dat een opname loopt.
+      Op Android 13 en hoger vraagt de App hier eerst toestemming voor.</li>
+  <li><strong>Voorgronddiensten</strong> (gegevenssynchronisatie en speciaal gebruik): zodat het importeren van je
+      catalogus en een geplande opname doorlopen als het apparaat in stand-by staat of de App op de achtergrond draait.
+      Zolang dit gebeurt, staat er een melding in beeld.</li>
+  <li><strong>Apparaat wakker houden</strong> (wake lock): zodat een import of opname niet stopt als het apparaat in slaapstand gaat.</li>
+  <li><strong>Starten na opstarten</strong>: zodat geplande opnames ook na een herstart van het apparaat op tijd beginnen.</li>
 </ul>
-<p>De App vraagt geen toegang tot je locatie, camera, microfoon of contacten.</p>
+<p>
+  Deze machtigingen worden alleen gebruikt voor de functies van de App zelf. Er worden daarbij geen gegevens naar ons
+  gestuurd. De App vraagt geen toegang tot je locatie, camera, microfoon of contacten.
+</p>
 
 <h2 id="bewaren">7. Hoe lang bewaren wij gegevens</h2>
 <ul>
@@ -215,10 +234,14 @@
 <h2 id="verwijderen">8. Gegevens verwijderen</h2>
 <p>Je kunt je gegevens op elk moment zelf verwijderen:</p>
 <ul>
-  <li>verwijder een afspeellijst of account in de App;</li>
+  <li>verwijder een afspeellijst, account of opname in de App;</li>
   <li>of ga naar <em>Instellingen → Apps → Orion TV → Opslag → Gegevens wissen</em>;</li>
   <li>of verwijder de App. Dan worden alle lokaal opgeslagen gegevens gewist.</li>
 </ul>
+<p>
+  Opnames en back-ups die op je eigen netwerkmap staan, worden niet automatisch verwijderd als je de App verwijdert.
+  Die kun je zelf op die netwerkmap wissen.
+</p>
 <p>
   Omdat wij geen account en geen gegevens van je op onze servers hebben, is er bij ons niets anders te verwijderen.
   Wil je dat wij je e-mailcontact verwijderen? Stuur dan een mail naar <a href="mailto:info@ictvo.nl">info@ictvo.nl</a>.
